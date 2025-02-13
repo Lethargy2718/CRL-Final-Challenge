@@ -1,0 +1,198 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select, dialog, form, label {
+    font: inherit;
+    color: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+ul, li {
+    list-style-type: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+/******************************/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+}
+
+a, h1 {
+    font-family: "Oswald", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    background-color: #2E323F;
+    padding: 1em 0;
+}
+
+
+nav {
+    position: absolute;
+    visibility: hidden;
+    height: 0;
+}
+
+.dropdown {
+    position: absolute;
+    border-radius: 50%;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+nav.nav--visible {
+    position: relative;
+    visibility: visible;
+    height: auto;
+
+    text-align: center;
+}
+
+.nav__link {
+    color: white;
+}
+
+.nav__link:hover, 
+.nav__link:focus {
+    opacity: 0.6;
+}
+
+.nav__btn {
+    background-color: #A59678;
+    padding: 0.2em 0.7em;
+    border-radius: 100px;
+    vertical-align: middle;
+}
+
+.nav__list-item {
+    margin: 1em;
+
+}
+
+.nav__list--primary {
+    margin-bottom: 1.4em;
+}
+
+section {
+    padding: 2em 0;
+}
+
+/* Section One/Hero */
+
+.hero {
+    background-color: #3B4050;
+    color: white;
+}
+
+.hero__title {
+    font-size: 3rem;
+}
+
+.hero__text {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin: 2em 0;
+}
+
+.hero__btn {
+    background-color: #A59678;
+    font-size: 1.3rem;
+    padding: 0.3em 1.5em;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.hero__title--secondary-clr {
+    color: #A59678;
+}
+
+/* Section Two */
+
+.section-two {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.section-two__title {
+    color: #A59678;
+}
+
+.section-two__text {
+    margin: 1.5em 0 4em;
+    font-family: "Montserrat";
+}
+
+/* Section Three */
+
+.section-three {
+    background-color: #FFFFFF;   
+}
+
+.section-three__title {
+    color: #A59678;
+    font-size: 2.45rem;
+}
+
+.section-three__text {
+    margin: 1.5em 0;
+}
+
+.section-three__card {
+    background-color: #3B4050;
+    text-align: center;
+    padding: 1.5em;
+    margin: 1.3em 0;
+    color: white;
+}
+
+.section-three__card__title {
+    margin-bottom: 1em;
+}
+
+/* Section Four */
