@@ -77,9 +77,11 @@ nav {
 
 .dropdown {
     position: absolute;
-    border-radius: 50%;
-    height: 1.5em;
-    width: 1.5em;
+    border-radius: 50%;    
+    height: 1.6em;
+    width: 1.6em;
+    background-color: #3B4050;
+    color: white;
 }
 
 .logo {
@@ -112,14 +114,13 @@ nav.nav--visible {
 
 .nav__list-item {
     margin: 1em;
-
 }
 
 .nav__list--primary {
     margin-bottom: 1.4em;
 }
 
-section {
+.section {
     padding: 2em 0;
 }
 
@@ -189,6 +190,7 @@ section {
     padding: 1.5em;
     margin: 1.3em 0;
     color: white;
+    font-size: 0.85em;
 }
 
 .section-three__card__title {
@@ -196,3 +198,168 @@ section {
 }
 
 /* Section Four */
+
+.section-four {
+    background-color: #2E323F;
+    color: lightgray;
+
+    & h3 {
+        color: #A59678
+    }
+}
+
+.footer__title {
+    color: white;
+}
+
+.footer__text-container {
+    padding-top: 2em;
+}
+
+.footer__text-container__title {
+    padding-bottom: 1em;
+}
+
+.footer__links-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.footer__link-column {
+    margin-top: 2em;
+}
+
+.footer__link-item {
+    margin-top: 1em;
+    &:hover, &:focus {
+         opacity: 0.6; cursor: pointer;
+    }
+}
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+    .section-two__text {
+        padding: 0 2.5em;
+        margin-right: auto;
+        margin-left: auto;
+        width: 85%;
+    }
+
+    .section-three__cards-container {
+        display: flex;
+        gap: 1em;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .logo {
+        margin: 0 auto 0 0;
+    }
+
+    .header__container {
+        display: flex;
+    }
+
+    nav {
+        position: relative;
+        visibility: visible;
+        height: auto;
+
+        display: flex;
+        gap: 2em;
+    }
+
+    .nav__list {
+        display: flex;
+        margin: 0;
+        gap: 1em;
+    }
+
+    .nav__list-item {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Section One */
+
+    .hero {
+        display: flex;
+        align-items: center;
+        padding: 4em 0;
+    }
+
+    .hero__title {
+        width: 50%;
+        font-size: 4rem;
+    }
+
+    .hero__cta {
+        width: 45%;
+        margin: 0;
+        align-self: flex-end;
+    }
+
+    .hero__text {
+        margin: 2em 0;
+        font-size: 1.25rem;
+    }
+
+    .hero__btn {
+        font-size: 1.25rem;
+    }
+
+    /* Section Two */
+
+    .section-two .col {
+        width: 31%;
+    }
+
+    .section-two__title {
+        font-size: 1.875rem;
+    }
+
+    .section-two__text {
+        width: 100%;
+        margin: 1.3em 0;
+        padding: 0;
+        font-size: 1.125rem;
+    }
+
+    /* Section Three */
+    .section-three__cards-container {
+        display: block;
+        width: 30%;
+    }
+
+    .section-three__left {
+        width: 60%;
+    }
+
+    .section-three__card {
+        margin: 0 0 1em 0;
+    }
+
+    /* Section Four */
+
+    .footer__title {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .footer h3 {
+        font-size: 1.3125rem;
+    }
+    
+    .footer__link-item, .footer__text-container__text {
+        font-size: 1rem;
+    }
+}

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Document</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -17,8 +17,8 @@
 <body>
 
     <header>
-        <div class="container row header-container">
-            <button class="dropdown">O</button>
+        <div class="container row header__container">
+            <button class="dropdown"><i class="fa-solid fa-bars"></i></button>
             <img src="logo.svg" alt="CRL" class="logo">
             <nav>
                 <ul class="nav__list nav__list--primary">
@@ -34,12 +34,12 @@
         </div>
     </header>
 
-    <section class="section-one hero">
+    <section class="section-one hero section">
         <div class="container row">
             <h1 class="hero__title col">
                 Responsive layouts <span class="hero__title--secondary-clr">don't have to be a struggle</span>
             </h1>
-            <div class="hero__cta">
+            <div class="hero__cta col">
                 <p class="hero__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ab, nulla sint et neque necessitatibus commodi rerum velit amet dolores asperiores natus facilis nesciunt illo. Facere mollitia necessitatibus voluptate rerum?
                 </p>
@@ -48,43 +48,87 @@
         </div>
     </section>
 
-    <section class="section-two">
+    <section class="section-two section">
         <div class="container row">
             <div class="col">
                 <h1 class="section-two__title">Mobile-first</h1>
-                <p class="section-two__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quod. Natus dolore magni, cupiditate et ratione architecto iste vitae maxime voluptatem tempore laboriosam eligendi nesciunt sit accusantium amet esse quia!</p>
+                <p class="section-two__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nostrum pariatur modi recusandae sapiente! Blanditiis nemo inventore eius?</p>
             </div>
             <div class="col">
                 <h1 class="section-two__title">Efficient</h1>
-                <p class="section-two__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quo perferendis odit quidem neque, optio, dignissimos soluta sint omnis, at laboriosam nihil? Numquam eum, temporibus quaerat nesciunt id illo nostrum.</p>
+                <p class="section-two__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nostrum pariatur modi recusandae sapiente! Blanditiis nemo inventore eius?</p>
             </div>
             <div class="col">
                 <h1 class="section-two__title">Done right</h1>
-                <p class="section-two__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga culpa nihil, beatae nobis commodi quo? Nihil veritatis quo, nostrum iusto, tempore repellat provident at repellendus illum aspernatur nisi? Quasi, amet?</p>
+                <p class="section-two__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nostrum pariatur modi recusandae sapiente! Blanditiis nemo inventore eius?</p>
             </div>
         </div>
     </section>
     
-    <section class="section-three">
+    <section class="section-three section">
         <div class="container row">
-            <h1 class="section-three__title">It doesn't have to be so hard</h1>
-            <p class="section-three__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos cupiditate hic at aspernatur, asperiores commodi? Placeat nemo ducimus, beatae ex aliquid vel nihil ullam reprehenderit earum ut omnis? Suscipit.</p>
-            <img src="the-image.jpg" alt="Some clean websites">
-            <p class="section-three__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum nulla fugiat ea nemo, unde nobis ducimus illum. Possimus laborum dignissimos doloremque, maiores natus cupiditate exercitationem obcaecati pariatur odio ex.</p>
+            <div class="section-three__left col">
+                <h1 class="section-three__title">It doesn't have to be so hard</h1>
+                <p class="section-three__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos cupiditate hic at aspernatur, asperiores commodi? Placeat nemo ducimus, beatae ex aliquid vel nihil ullam reprehenderit earum ut omnis? Suscipit.</p>
+                <img src="the-image.jpg" alt="Some clean websites">
+                <p class="section-three__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum nulla fugiat ea nemo, unde nobis ducimus illum. Possimus laborum dignissimos doloremque, maiores natus cupiditate exercitationem obcaecati pariatur odio ex.</p>
+            </div>
 
-            <div class="section-three__card">
-                <h1 class="section-three__card__title">Break it down</h1>
-                <p class="section-three__card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet odit, quae illo ullam, laudantium facere nam quisquam perspiciatis repellat quis fugit? Aliquid, iste! Aperiam voluptas voluptatibus libero consequuntur culpa asperiores.</p>
-            </div>
-            <div class="section-three__card">
-                <h1 class="section-three__card__title">Work your way up</h1>
-                <p class="section-three__card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum voluptatibus nihil consequatur quo est molestiae? Dolore ex dignissimos error asperiores nemo cum consectetur eaque assumenda? Illum sint vel corporis!</p>
-            </div>
-            <div class="section-three__card">
-                <h1 class="section-three__card__title">Enjoy</h1>
-                <p class="section-three__card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi similique tempora hic! Similique error doloribus voluptas architecto incidunt sint distinctio earum mollitia iste, repellat minus fuga quod sapiente adipisci illum?</p>
+            <div class="section-three__cards-container col">
+                <div class="section-three__card">
+                    <h1 class="section-three__card__title">Break it down</h1>
+                    <p class="section-three__card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime inventore ex quae, praesentium excepturi pariatur suscipit assumenda ipsam dolor nisi!</p>
+                </div>
+                <div class="section-three__card">
+                    <h1 class="section-three__card__title">Work your way up</h1>
+                    <p class="section-three__card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime inventore ex quae, praesentium excepturi pariatur suscipit assumenda ipsam dolor nisi!</p>
+                </div>
+                <div class="section-three__card">
+                    <h1 class="section-three__card__title">Enjoy</h1>
+                    <p class="section-three__card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime inventore ex quae, praesentium excepturi pariatur suscipit assumenda ipsam dolor nisi!</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <footer class="section-four section">
+        <div class="container">
+            <h1 class="footer__title">Just scratching the surface</h1>
+            <div class="footer__content">
+                <div class="footer__text-container">
+                    <h3 class="footer__text-container__title">About our company</h3>
+                    <p class="footer__text-container__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi deserunt id! Omnis aliquam blanditiis a odio natus deleniti porro hic numquam non debitis nam voluptatibus, est perspiciatis? Praesentium, dolores.</p>
+                </div>
+                <div class="footer__links-container">
+                    <div class="footer__link-column">
+                        <h3 class="footer__links-title">Getting around</h3>
+                        <ul class="footer__link-list">
+                            <li class="footer__link-item">Home</li>
+                            <li class="footer__link-item">About</li>
+                            <li class="footer__link-item">Contact</li>
+                        </ul>
+                    </div>
+                    <div class="footer__link-column">
+                        <h3 class="footer__links-title">Other things</h3>
+                        <ul class="footer__link-list">
+                            <li class="footer__link-item">Lorem ipsum</li>
+                            <li class="footer__link-item">dolor</li>
+                            <li class="footer__link-item">sit amet</li>
+                            <li class="footer__link-item">consectetur</li>
+                        </ul>
+                    </div>
+                    <div class="footer__link-column">
+                        <h3 class="footer__links-title">And more</h3>
+                        <ul class="footer__link-list">
+                            <li class="footer__link-item">Lorem ipsum</li>
+                            <li class="footer__link-item">dolor</li>
+                            <li class="footer__link-item">sit amet</li>
+                            <li class="footer__link-item">consectetur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
